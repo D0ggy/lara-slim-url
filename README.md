@@ -2,7 +2,7 @@ Lara Slim Url
 ==========================
 
 <p align="center">
-<a href="https://github.com/laravel/horizon/actions"><img src="https://github.com/D0ggy/lara-slim-url/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/D0ggy/lara-slim-url/actions"><img src="https://github.com/D0ggy/lara-slim-url/workflows/tests/badge.svg" alt="Build Status"></a>
 </p>
 
 ## Introduction
