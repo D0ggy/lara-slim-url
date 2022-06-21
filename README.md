@@ -3,6 +3,7 @@ Lara Slim Url
 
 <p align="center">
 <a href="https://github.com/D0ggy/lara-slim-url/actions"><img src="https://github.com/D0ggy/lara-slim-url/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/D0ggy/lara-slim-url"><img src="https://img.shields.io/packagist/dt/D0ggy/lara-slim-url" alt="Total Downloads"></a>
 </p>
 
 ## Introduction
