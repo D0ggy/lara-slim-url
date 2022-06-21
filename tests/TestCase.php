@@ -5,11 +5,9 @@ namespace D0ggy\LaraSlimUrl\Tests;
 use D0ggy\LaraSlimUrl\Models\SlimUrl;
 use D0ggy\LaraSlimUrl\SlimUrlServiceProvider;
 use Illuminate\Contracts\Config\Repository;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-
     protected $loadEnvironmentVariables = true;
 
     public function setUp()
@@ -49,6 +47,5 @@ class TestCase extends \Orchestra\Testbench\TestCase
         $app['config']->set('slim_url.database.model', SlimUrl::class);
         $app['config']->set('slim_url.database.table', 'slim_urls');
         $app['config']->set('slim_url.route.raw_string', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
-
     }
 }

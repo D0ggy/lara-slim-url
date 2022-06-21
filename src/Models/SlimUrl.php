@@ -2,9 +2,7 @@
 
 namespace D0ggy\LaraSlimUrl\Models;
 
-
 use Illuminate\Database\Eloquent\Model;
-
 
 class SlimUrl extends Model
 {
@@ -20,5 +18,4 @@ class SlimUrl extends Model
         $this->setTable(config('slim_url.database.table'));
         parent::__construct($attributes);
     }
-
 }

@@ -26,10 +26,9 @@ return [
          */
         'prefix' => env('SLIM_URL_PREFIX', 's'),
 
-        'middleware' => ['web',],
+        'middleware' => ['web'],
 
         'raw_string' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
     ],
-
 
 ];

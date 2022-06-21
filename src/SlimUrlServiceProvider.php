@@ -9,19 +9,18 @@ class SlimUrlServiceProvider extends ServiceProvider
 {
     public function register()
     {
-
     }
 
     public function boot()
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('slim_url.php'),
+                __DIR__.'/../config/config.php' => config_path('slim_url.php'),
             ], 'config');
 
-            if (!class_exists('CreateSlimUrlsTable')) {
+            if (! class_exists('CreateSlimUrlsTable')) {
                 $this->publishes([
-                    __DIR__ . '/../database/migrations/create_slim_urls_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_slim_urls_table.php'),
+                    __DIR__.'/../database/migrations/create_slim_urls_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_slim_urls_table.php'),
                     // you can add any number of migrations here
                 ], 'migrations');
             }
@@ -37,6 +36,7 @@ class SlimUrlServiceProvider extends ServiceProvider
         ], function (Router $router) {
             $router->get('/{short_url}', function ($short_url) {
                 $redirect = \D0ggy\LaraSlimUrl\Facades\SlimUrl::getOriginalUrl($short_url);
+
                 return app('redirect')->to($redirect);
             });
         });
