@@ -11,7 +11,7 @@ Lara Slim Url
 
 ## Introduction
 
-A tool to shorten your url.
+A Laravel package to shorten your url.
 
 ## Requirements
 
